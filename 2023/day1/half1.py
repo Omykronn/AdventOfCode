@@ -14,7 +14,7 @@ def find_digits(s: str):
 
 sumup = 0
 
-with open("day1/input.txt", 'r') as src:    
+with open("2023/day1/input.txt", 'r') as src:    
     for line in src.readlines():
         sumup += find_digits(line)
 

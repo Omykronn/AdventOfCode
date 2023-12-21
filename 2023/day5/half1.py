@@ -19,7 +19,7 @@ class Map:
 
 maps = [Map() for _ in range(7)]
 
-with open("day5/input.txt", 'r') as src:
+with open("2023/day5/input.txt", 'r') as src:
     seeds = list(map(int, src.readline().replace('\n', '').split(": ")[1].split(' ')))
 
     line = src.readline()

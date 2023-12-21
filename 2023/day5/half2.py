@@ -36,7 +36,7 @@ def evolv(intervals, maps):
     return modified_intervals, unmodified_intervals
 
 
-with open("day5/input.txt", 'r') as src:
+with open("2023/day5/input.txt", 'r') as src:
     seeds = list(map(int, src.readline().replace('\n', '').split(": ")[1].split(' ')))
     intervals_to_scan = [(seeds[2*k], seeds[2*k] + seeds[2*k+1]) for k in range(len(seeds) // 2)]  # Interval (a, b) is a the mathematical interger interval [a; b[
 

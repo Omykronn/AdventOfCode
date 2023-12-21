@@ -1,6 +1,6 @@
 # /!\ Python Version must be greater than 3.10
 
-# CONSTANT
+# CONSTANTS
 
 FIVE_OF_A_KIND = 6
 FOUR_OF_A_KIND = 5
@@ -73,8 +73,6 @@ sumup = 0
 buble_sort(data)
 
 for i in range(len(data)):
-    print(type_of_hand(data[i][0]), data[i][0])
-
     sumup += (i + 1) * int(data[i][1])
 
 print(sumup)

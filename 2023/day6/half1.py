@@ -21,7 +21,7 @@ def margin(time, distance):
 
 data = []
 
-with open("day6\input.txt", 'r') as src:
+with open("2023\day6\input.txt", 'r') as src:
     for line in src.readlines():
         data.append([0])
 
