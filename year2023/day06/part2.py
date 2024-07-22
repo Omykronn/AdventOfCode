@@ -23,7 +23,7 @@ def margin(time, distance):
     else:
         return 0
 
-def prepare(src: str) -> [[int]]:
+def prepare(src: str) -> [int]:
     """
     Import data from a file, and format them
     """
@@ -33,7 +33,7 @@ def prepare(src: str) -> [[int]]:
 
     return data
 
-def solve(data: [[int]]) -> int:
+def solve(data: [int]) -> int:
     """
     Determine the flag of data
     """
