@@ -1,4 +1,8 @@
 def isIn(point: (int, int), polygon: [(int, int)]) -> bool:
+    """
+    Tests if a point is inside a polygon
+    """
+
     degree = len(polygon)
     even = False
 
@@ -22,3 +26,10 @@ def isIn(point: (int, int), polygon: [(int, int)]) -> bool:
 
         
     return even
+
+def segmentIntercept(seg1: (int, int), seg2: (int, int)):
+    """
+    Checks if the union of segments seg1 and seg2 is not empty
+    """
+
+    return (seg2[0] <= seg1[1] and seg1[1] <= seg2[1]) or (seg1[0] <= seg2[1] and seg2[0] <= seg1[0]) or (seg1[0] <= seg2[0] and seg2[1] <= seg1[1]) or (seg2[0] <= seg1[0] and seg1[1] <= seg2[1])
