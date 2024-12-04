@@ -8,7 +8,7 @@ def prepare(src: str) -> [[int]]:
 
     return data
 
-def check(report: [int]):
+def check(report: [int]) -> bool:
     """
     Check a report's validity
     """
