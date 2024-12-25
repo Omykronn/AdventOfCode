@@ -52,3 +52,17 @@ def findWordInDirections(word: str, matrix: [str], directions=ALL_DIRECTIONS) ->
                         coords.append((i, j))
 
     return coords
+
+def findCharacter(matrix: [str], char: str) -> [(int, int)]:
+    """
+    Find a character in a 2D-matrix of string
+    """
+
+    positions = []
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if matrix[i][j] == char:
+                positions.append((i,j))
+
+    return positions
